@@ -5,19 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/Icono/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Contactenos</title>
 </head>
-<body>
-    <header class="header">
+<body class="bg-success-subtle">
+    <header class="text-center">
         <h1>Ignacio Simonetta</h1>
         <h2>Finalista del FIA Rally Star</h2>
 
-        <nav>
-            <li class="navegacion"><a href="../Pages/Quienes-Somos.html">Sobre Mi</a></li>
-            <li class="navegacion"><a href="../Pages/imagenes.html">Mis Imagenes</a></li>
-            <li class="navegacion"><a href="../Pages/Redes.html">Mis Redes Sociales</a></li>
-            <li class="navegacion"><a href="../Pages/Contacto.html">Contactenos</a></li>
+        <nav class="navbar justify-content-center">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" aria-disabled="true" href="./Quienes-Somos.html">Sobre Mi</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Mis Redes</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Instagram</a></li>
+                        <li><a class="dropdown-item" href="#">Tik Tok</a></li>
+                        <li><a class="dropdown-item" href="#">YouTube</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./Redes.html">Mas Info</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="./imagenes.html">Imagenes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-disabled="true" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
         </nav>
+
 
     </header>
     <form action="" method="post" enctype="text/plain">
@@ -86,5 +112,9 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
