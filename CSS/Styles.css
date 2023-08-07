@@ -4,11 +4,11 @@ html {
 }
 
 body{
-  height: 150vh;
+  height: 160vh;
 }
 
 .navFooter {
-  display: flex;
+  display: block;
   text-align: center;
   justify-content: space-evenly;
 }
