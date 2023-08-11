@@ -79,6 +79,7 @@ p {
   color: black;
   position: relative;
   text-decoration-color: red;
+  font-weight: bold;
 }
 
 .links::after {
