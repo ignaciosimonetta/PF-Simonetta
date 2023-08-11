@@ -1,128 +1,84 @@
 html {
-  background-color: rgb(0, 0, 59);
+  margin: 0;
+  padding: 0;
 }
-
-.header {
-  grid-area: header;
-  text-align: center;
-  /*z-index: 1;*/
-  background-color: rgb(0, 0, 59);
-  font-family: "Montserrat", sans-serif;
-  color: rgb(189, 79, 0);
+html body {
+  height: 160vh;
 }
-.header .navegacion {
+html body img {
+  border-radius: 10px;
+}
+html .nav-item a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: black;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 5px;
+}
+html .nav-item a:hover {
+  color: white;
+  box-shadow: inset 200px 0 0 0 #0D6EFD;
+  border-radius: 10%;
+}
+html .titulo1, html .titulo2, html .titulo3, html .titulo4 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+html .titulo1.titulo1, html .titulo2.titulo1, html .titulo3.titulo1, html .titulo4.titulo1 {
+  font-size: 4rem;
+  margin-top: 2%;
+}
+html .titulo1.titulo2, html .titulo2.titulo2, html .titulo3.titulo2, html .titulo4.titulo2 {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
   text-align: center;
-  text-decoration: none;
-  display: inline-flex;
-  flex-direction: column;
-  color: rgb(189, 79, 0);
-  font-family: "Montserrat", sans-serif;
+}
+html .titulo1.titulo3, html .titulo2.titulo3, html .titulo3.titulo3, html .titulo4.titulo3 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 2.5rem;
+  padding: 20px;
+}
+html .titulo1.titulo4, html .titulo2.titulo4, html .titulo3.titulo4, html .titulo4.titulo4 {
+  text-align: center;
+  margin: 2%;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+html p {
+  font-family: "Roboto", sans-serif;
+  font-style: oblique;
+  margin: 15px;
   padding: 10px;
-  border-radius: 5px;
-  grid-area: header;
+  font-size: 1.05rem;
 }
-
-#indexbody {
-  height: 200vh;
-  display: grid;
-  grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "section section section" "section section section" "pie pie pie";
+html .footer {
+  background-color: black;
+  color: cadetblue;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 8%;
 }
-#indexbody #sectionindex {
-  grid-area: section;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "article article article" "article article article";
+html .links {
+  font-size: larger;
+  display: block;
+  color: black;
+  position: relative;
+  text-decoration-color: red;
 }
-#indexbody #sectionindex .articleindex {
-  grid-area: article;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "video1 parrafo1 parrafo1" "parrafo2 parrafo2 video2";
-  grid-row-gap: 15px;
-  grid-column-gap: 15px;
+html .links::after {
+  content: "";
+  background: white;
+  mix-blend-mode: exclusion;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -5px;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-#indexbody #sectionindex .articleindex #parrafo1 {
-  display: grid;
-  grid-area: parrafo1;
-  font-size: 1.2rem;
-  background-color: rgb(189, 79, 0);
-  color: rgb(0, 0, 59);
-  padding: 5%;
-  border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
-  /*margin-top: 50px;*/
-  margin: 50px 50px;
-  height: 40%;
-  text-align: justify;
+html .links:hover::after {
+  height: calc(100% + 8px);
 }
-#indexbody #sectionindex .articleindex #video1 {
-  display: grid;
-  grid-area: video1;
-  margin-left: 5%;
-  margin-top: 10%;
-}
-#indexbody #sectionindex .articleindex #parrafo2 {
-  display: grid;
-  grid-area: parrafo2;
-  font-size: 1.2rem;
-  background-color: rgb(189, 79, 0);
-  color: rgb(0, 0, 59);
-  /*border: 10;*/
-  padding: 5%;
-  border-radius: 5px;
-  font-family: "Ubuntu", sans-serif;
-  margin: 50px 50px;
-  height: 40%;
-}
-#indexbody #sectionindex .articleindex #video2 {
-  display: grid;
-  grid-area: video2;
-  margin-right: 10px;
-  margin-top: 20%;
-}
-
-.pie {
-  grid-area: pie;
-  text-decoration: none;
-  background-color: rgb(0, 0, 59);
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(189, 79, 0);
-  padding: 20px;
-}
-.pie .navFooter {
-  display: inline-flex;
-  text-align: center;
-  justify-content: space-around;
-  width: 75%;
-}
-.pie .navFooter .navegacion {
-  display: inline-flex;
-  text-decoration: none;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.5rem;
-}
-
-.TituloNos {
-  color: rgb(189, 79, 0);
-  text-align: center;
-}
-
-.parrafoNos {
-  color: rgb(0, 0, 59);
-  background-color: rgb(189, 79, 0);
-  font-size: 1.5rem;
-  padding: 20px;
-  margin: 50px;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.formulario {
-  color: rgb(189, 79, 0);
-  width: 50%;
-  margin-left: 200px;
+@media screen and (max-width: 425px) {
+  html .nav {
+    display: block !important;
+  }
 }/*# sourceMappingURL=Styles.css.map */
